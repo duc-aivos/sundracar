@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoMart - Bán Ô Tô Chất Lượng</title>
+    <link rel="icon" type="image/x-icon" href="imgs/favico.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <style>
+        :root {
+            font-family: 'Inter', sans-serif;
+        }
+        body,
+        html {
+            scroll-behavior: smooth !important;
+        }
+        /* Custom styles for car images */
+        #hero .hero-img {
+            max-width: 300px;
+        }
+        .car-card img {
+            width: 100%;
+            height: auto;
+            max-height: 200px;
+            object-fit: cover;
+        }
+        .featured-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: .5rem;
+        }
+    </style>
+</head>
+
+<body class="antialiased px-4 md:px-0">
+    <header>
+        <div class="mx-auto sm:px-7 px-4 max-w-screen-xl py-10">
+            <div class="flex items-center">
+                <a href="/index.html" style="font-family: 'Nothing You Could Do', cursive;" class="text-2xl font-bold">AutoMart</a>
+                <nav class="ml-10 hidden md:flex space-x-6">
+                    <a href="/index.html" class="text-gray-700 hover:text-black">Trang Chủ</a>
+                    <a href="/cars.html" class="text-gray-700 hover:text-black">Danh Sách Xe</a>
+                    <a href="/compare.html" class="text-gray-700 hover:text-black">So Sánh Xe</a>
+                    <a href="/blog.html" class="text-gray-700 hover:text-black">Tin Tức</a>
+                    <a href="/contact.html" class="text-gray-700 hover:text-black">Liên Hệ</a>
+                </nav>
+                <button class="ml-auto bg-black rounded-lg hover:bg-black/80 duration-300 transition-colors border border-transparent px-8 py-2.5">
+                    <i class="bi bi-person"></i> Đăng Nhập
+                </button>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="mx-auto sm:px-7 px-4 max-w-screen-lg py-10 pb-20">
+            <div class="flex flex-col md:flex-row items-center gap-20">
+                <div style="min-width:300px;" data-aos="fade-right" data-aos-delay="50">
+                    <!-- Using the Mercedes-Benz E-Class image -->
+                    <img class="hero-img" src="https://images.unsplash.com/photo-1585390062628-be8608aa7d83?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzQ0MzV8MHwxfHNlYXJjaHwxfHxkZWFsZXJzaGlwfGVufDB8fHx8MTc2NDQ3MjYxMHww&ixlib=rb-4.1.0&q=80&w=1080" alt="Mercedes-Benz E-Class">
+                </div>
+                <div data-aos="fade-left" data-aos-delay="200">
+                    <h1 class="text-2xl font-bold lg:text-5xl pb-8">
+                        Tìm chiếc xe mơ ước<br>
+                        với giá cả ưu đãi
+                    </h1>
+                    <p class="text-xl pb-8">
+                        AutoMart kết nối bạn với các dòng xe mới và đã qua kiểm định chất lượng từ các nhà bán uy tín tại Việt Nam. Tìm kiếm, so sánh và lựa chọn dễ dàng chỉ trong vài phút.
+                    </p>
+                    <a href="/cars.html"
+                        class="mb-8 inline-block text-white bg-black rounded-lg hover:bg-black/80 duration-300 transition-colors border border-transparent px-8 py-2.5">
+                        Xem Danh Sách Xe <i class="bi bi-arrow-right"></i>
+                    </a>
+                    <div class="bg-gray-100 p-5 rounded max-w-[292px] flex gap-2 items-center text-center">
+                        <div class="flex items-center">
+                            <i class="bi bi-star-fill text-gray-900"></i>
+                            <i class="bi bi-star-fill text-gray-900"></i>
+                            <i class="bi bi-star-fill text-gray-900"></i>
+                            <i class="bi bi-star-fill text-gray-900"></i>
+                            <i class="bi bi-star-fill text-gray-900"></i>
+                        </div>
+                        <span class="text-dark text-xs">4.9/5 (275k Reviews)</span>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="why" class="bg-[#f1f1f1]">
+        <div class="mx-auto sm:px-7 px-4 max-w-screen-xl py-20">
+            <h2 class="text-2xl font-bold lg:text-5xl pb-8">
+                Tại sao chọn <span style="font-family: 'Nothing You Could Do', cursive;">AutoMart</span>?
+            </h2>
+            <p class="mb-16 text-xl">
+                Nền tảng thương mại điện tử xe hơi hàng đầu cho người Việt với giao diện hiện đại, tìm kiếm nhanh chóng và quản lý đơn hàng tiện lợi.
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-16 lg:gap-x-24 gap-y-20">
+                <div class="text-center">
+                    <div class="flex items-center justify-center w-10 h-10 mb-4 text-gray-100 bg-black rounded-full">
+                        <i class="bi bi-speedometer2 text-lg"></i>
+                    </div>
+                    <h3 class="mb-2 text-base font-semibold leading-tight text-gray-900">Tốc độ & Hiệu Quả</h3>
+                    <p class="text-sm text-gray-500">Trải nghiệm tìm kiếm xe nhanh và tối ưu hóa tốc độ tải trang.</p>
+                </div>
+                <div class="text-center">
+                    <div class="flex items-center justify-center w-10 h-10 mb-4 text-gray-100 bg-black rounded-full">
+                        <i class="bi bi-funnel text-lg"></i>
+                    </div>
+                    <h3 class="mb-2 text-base font-semibold leading-tight text-gray-900">Bộ Lọc Chính Xác</h3>
+                    <p class="text-sm text-gray-500">Lọc xe theo hãng, giá, năm, số km, trạng thái và nhiều tiêu chí khác.</p>
+                </div>
+                <div class="text-center">
+                    <div class="flex items-center justify-center w-10 h-10 mb-4 text-gray-100 bg-black rounded-full">
+                        <i class="bi bi-graph-up-arrow text-lg"></i>
+                    </div>
+                    <h3 class="mb-2 text-base font-semibold leading-tight text-gray-900">Tính Năng Tài Chính</h3>
+                    <p class="text-sm text-gray-500">Tính toán gói vay và hỗ trợ tài chính thuận tiện chỉ với vài thao tác.</p>
+                </div>
+                <div class="text-center">
+                    <div class="flex items-center justify-center w-10 h-10 mb-4 text-gray-100 bg-black rounded-full">
+                        <i class="bi bi-chat-left-dots text-lg"></i>
+                    </div>
+                    <h3 class="mb-2 text-base font-semibold leading-tight text-gray-900">Hỗ Trợ 24/7</h3>
+                    <p class="text-sm text-gray-500">Đội ngũ tư vấn luôn sẵn sàng giải đáp thắc mắc của khách hàng.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Featured Cars Section -->
+    <section id="featured-cars">
+        <div class="mx-auto sm:px-7 px-4 max-w-screen-xl py-20">
+            <h2 class="text-2xl font-bold lg:text-4xl pb-8">Danh Sách Xe Nổi Bật</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Car Card 1 -->
+                <div class="car-card border rounded-md overflow-hidden shadow hover:shadow-lg transition-shadow">
+                    <img src="https://images.unsplash.com/photo-1585390062628-be8608aa7d83?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzQ0MzV8MHwxfHNlYXJjaHwxfHxkZWFsZXJzaGlwfGVufDB8fHx8MTc2NDQ3MjYxMHww&ixlib=rb-4.1.0&q=80&w=1080" alt="Mercedes-Benz E-Class">
+                    <div class="p-4">
+                        <h3 class="font-bold text-xl mb-2">Mercedes-Benz E-Class</h3>
+                        <p class="text-gray-600">Xe sang trọng, hiệu suất vượt trội – mới 2023</p>
+                        <a href="/car-detail.html" class="inline-block mt-4 text-white bg-black rounded-lg px-4 py-2 hover:bg-black/80 transition-colors">Xem chi tiết</a>
+                    </div>
+                </div>
+                <!-- Car Card 2 -->
+                <div class="car-card border rounded-md overflow-hidden shadow hover:shadow-lg transition-shadow">
+                    <img src="https://images.unsplash.com/photo-1574023240744-64c47c8c0676?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzQ0MzV8MHwxfHNlYXJjaHwyfHxkZWFsZXJzaGlwfGVufDB8fHx8MTc2NDQ3MjYxMHww&ixlib=rb-4.1.0&q=80&w=1080" alt="Xe đẳng cấp tại showroom">
+                    <div class="p-4">
+                        <h3 class="font-bold text-xl mb-2">Xe Đẳng Cấp</h3>
+                        <p class="text-gray-600">Một loạt xe với thiết kế đỉnh cao đang chờ bạn khám phá.</p>
+                        <a href="/car-detail.html" class="inline-block mt-4 text-white bg-black rounded-lg px-4 py-2 hover:bg-black/80 transition-colors">Xem chi tiết</a>
+                    </div>
+                </div>
+                <!-- Car Card 3 -->
+                <div class="car-card border rounded-md overflow-hidden shadow hover:shadow-lg transition-shadow">
+                    <img src="https://images.unsplash.com/photo-1600191762849-bf8fd13e9dc0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzQ0MzV8MHwxfHNlYXJjaHw1fHxkZWFsZXJzaGlwfGVufDB8fHx8MTc2NDQ3MjYxMHww&ixlib=rb-4.1.0&q=80&w=1080" alt="Blue Audi A4 Quattro">
+                    <div class="p-4">
+                        <h3 class="font-bold text-xl mb-2">Audi A4 Quattro</h3>
+                        <p class="text-gray-600">Xe thể thao, phong cách và hiện đại – đã qua kiểm định chất lượng.</p>
+                        <a href="/car-detail.html" class="inline-block mt-4 text-white bg-black rounded-lg px-4 py-2 hover:bg-black/80 transition-colors">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <div class="mx-auto sm:px-7 px-4 max-w-screen-xl py-20">
+            <h2 class="text-2xl font-bold lg:text-5xl pb-8">
+                <span style="font-family: 'Nothing You Could Do', cursive;">Phản Hồi</span> Khách Hàng
+            </h2>
+            <div class="swiper">
+                <div class="swiper-wrapper items-center flex flex-row">
+                    <div class="swiper-slide">
+                        <div class="flex flex-col gap-8">
+                            <div class="bg-gradient-to-b from-slate-50 to-slate-100 w-72 shadow-lg mx-auto rounded-xl p-4">
+                                <p class="text-gray-600">
+                                    <span class="text-lg font-bold text-slate-800">“</span>
+                                    Tôi đã tìm được chiếc xe mơ ước của mình tại AutoMart. Quy trình tìm kiếm và đặt xe thật nhanh chóng và tiện lợi.
+                                    <span class="text-lg font-bold text-slate-800">”</span>
+                                </p>
+                                <div class="flex items-center mt-4">
+                                    <a href="#" class="relative block">
+                                        <img alt="profil" src="https://images.unsplash.com/photo-1634981297356-f9b4daa98a92?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzQ0MzV8MHwxfHNlYXJjaHwzfHxkZWFsZXJzaGlwfGVufDB8fHx8MTc2NDQ3MjYxMHww&ixlib=rb-4.1.0&q=80&w=1080" class="mx-auto object-cover rounded-full h-10 w-10">
+                                    </a>
+                                    <div class="flex flex-col justify-between ml-2">
+                                        <span class="text-sm font-semibold text-slate-800">Nguyễn An</span>
+                                        <span class="flex items-center text-xs">Khách hàng hài lòng</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="flex flex-col gap-8">
+                            <div class="bg-gradient-to-b from-slate-50 to-slate-100 w-72 shadow-lg mx-auto rounded-xl p-4">
+                                <p class="text-gray-600">
+                                    <span class="text-lg font-bold text-slate-800">“</span>
+                                    Dịch vụ tư vấn nhiệt tình và phản hồi nhanh chóng. Tôi rất tin tưởng vào chất lượng xe và sự chuyên nghiệp của đội ngũ AutoMart.
+                                    <span class="text-lg font-bold text-slate-800">”</span>
+                                </p>
+                                <div class="flex items-center mt-4">
+                                    <a href="#" class="relative block">
+                                        <img alt="profil" src="https://images.unsplash.com/photo-1574023278969-abb7ab49945c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzQ0MzV8MHwxfHNlYXJjaHw3fHxkZWFsZXJzaGlwfGVufDB8fHx8MTc2NDQ3MjYxMHww&ixlib=rb-4.1.0&q=80&w=1080" class="mx-auto object-cover rounded-full h-10 w-10">
+                                    </a>
+                                    <div class="flex flex-col justify-between ml-2">
+                                        <span class="text-sm font-semibold text-slate-800">Trần Bình</span>
+                                        <span class="flex items-center text-xs">Khách hàng thân thiết</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Additional slides can be added similarly -->
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer Section -->
+    <footer class="bg-[#f1f1f1]">
+        <div class="mx-auto sm:px-7 px-4 max-w-screen-xl py-10">
+            <div class="flex items-center">
+                <p class="mb-8 text-sm text-center text-gray-700 md:text-left md:mb-0">© Copyright 2023 AutoMart. All Rights Reserved.</p>
+                <button class="ml-auto bg-black rounded-lg hover:bg-black/80 duration-300 transition-colors border border-transparent px-8 py-2.5">
+                    <i class="bi bi-arrow-up-circle"></i>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            slidesPerView: 4,
+            spaceBetween: 10,
+            loop: true,
+            autoplay: {
+                delay: 5000
+            },
+            freeMode: true,
+            breakpoints: {
+                1320: {
+                    slidesPerView: 4
+                },
+                1000: {
+                    slidesPerView: 3
+                },
+                700: {
+                    slidesPerView: 2
+                },
+                100: {
+                    slidesPerView: 1
+                }
+            }
+        });
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
